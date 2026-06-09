@@ -80,7 +80,7 @@
                 <a href="#about" class="hover:text-arch-accent transition-colors duration-300">Philosophy</a>
                 <a href="#portfolio" class="hover:text-arch-accent transition-colors duration-300">Projects</a>
                 <a href="#process" class="hover:text-arch-accent transition-colors duration-300">Process</a>
-                <a href="#contact" class="hover:text-arch-accent transition-colors duration-300">Contact</a>
+                <a href="#contact" class="hover:text-arch-accent transition-colors duration-300">Guestbook</a>
             </nav>
 
             <!-- Mobile Menu Trigger -->
@@ -98,7 +98,7 @@
         <a href="#about" class="mobile-link hover:text-arch-accent transition-colors">Philosophy</a>
         <a href="#portfolio" class="mobile-link hover:text-arch-accent transition-colors">Projects</a>
         <a href="#process" class="mobile-link hover:text-arch-accent transition-colors">Process</a>
-        <a href="#contact" class="mobile-link hover:text-arch-accent transition-colors">Contact</a>
+        <a href="#contact" class="mobile-link hover:text-arch-accent transition-colors">Guestbook</a>
     </div>
 
     <!-- Hero Section -->
@@ -137,7 +137,7 @@
                         <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-2"></i>
                     </a>
                     <a href="#contact" class="border border-arch-dark/30 hover:border-arch-dark text-arch-dark px-8 py-4 text-sm font-medium tracking-widest uppercase bg-white/40 backdrop-blur transition-all duration-300 text-center">
-                        Inquiry Let's Talk
+                        Write Guestbook
                     </a>
                 </div>
             </div>
@@ -412,17 +412,17 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact (Now Guestbook) Section -->
     <section id="contact" class="py-24 max-w-7xl mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             
             <!-- Left Contact Info -->
             <div class="lg:col-span-5 space-y-8">
                 <div>
-                    <span class="text-[11px] uppercase tracking-widest text-arch-accent font-bold">04 / ARCHI PARTNERS</span>
-                    <h2 class="text-3xl font-bold tracking-tight text-arch-dark mt-2 mb-4">프로젝트 협업 문의</h2>
+                    <span class="text-[11px] uppercase tracking-widest text-arch-accent font-bold">04 / GUESTBOOK</span>
+                    <h2 class="text-3xl font-bold tracking-tight text-arch-dark mt-2 mb-4">스튜디오 아키 방명록</h2>
                     <p class="text-sm text-arch-gray leading-relaxed font-light">
-                        새로운 거주 공간 계획, 도심형 빌딩 신축, 또는 기획 설계 단계의 마스터 플랜 검토가 필요하신가요? 대지 주소와 대략적인 목적을 남겨주시면 면밀히 검토 후 신속하게 연락드리겠습니다.
+                        이상훈 소장의 포트폴리오를 둘러보시며 느끼신 점이나 남기고 싶으신 따뜻한 한마디를 자유롭게 기록해 주세요. 대지를 스쳐가는 빛처럼, 여러분이 머물다 간 흔적은 공간을 창조하는 큰 영감이 됩니다.
                     </p>
                 </div>
 
@@ -459,55 +459,38 @@
                 </div>
             </div>
 
-            <!-- Right Contact Form -->
-            <div class="lg:col-span-7 bg-white border border-arch-grid p-8 rounded-2xl shadow-sm">
-                <form id="contactForm" class="space-y-6" onsubmit="handleContactSubmit(event)">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-xs uppercase tracking-wider text-arch-gray font-semibold mb-2" for="name">의뢰인 성함 / 사명</label>
-                            <input class="w-full bg-arch-bg border border-arch-grid focus:border-arch-accent rounded-lg px-4 py-3 text-sm outline-none transition-all font-light" type="text" id="name" required placeholder="홍길동">
-                        </div>
-                        <div>
-                            <label class="block text-xs uppercase tracking-wider text-arch-gray font-semibold mb-2" for="email">이메일 주소</label>
-                            <input class="w-full bg-arch-bg border border-arch-grid focus:border-arch-accent rounded-lg px-4 py-3 text-sm outline-none transition-all font-light" type="email" id="email" required placeholder="contact@example.com">
-                        </div>
+            <!-- Right Padlet Link & Interactive Guestbook Wall -->
+            <div class="lg:col-span-7 bg-white border border-arch-grid p-8 rounded-2xl shadow-sm flex flex-col justify-between min-h-[450px]">
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-xs font-mono text-arch-accent tracking-widest font-bold uppercase"><i class="fa-regular fa-comments mr-2"></i>Virtual Guest Board</span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
                     </div>
+                    
+                    <h3 class="text-xl font-bold text-arch-dark mb-4">온라인 방명록 남기기</h3>
+                    <p class="text-sm text-arch-gray font-light leading-relaxed mb-6">
+                        아래 버튼을 누르면 패들렛(Padlet) 방명록으로 이동하여 격려의 글이나 의견을 포스트잇 형태로 쉽고 자유롭게 남기실 수 있습니다.
+                    </p>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-xs uppercase tracking-wider text-arch-gray font-semibold mb-2" for="phone">연락처</label>
-                            <input class="w-full bg-arch-bg border border-arch-grid focus:border-arch-accent rounded-lg px-4 py-3 text-sm outline-none transition-all font-light" type="tel" id="phone" placeholder="010-XXXX-XXXX">
+                    <!-- Preview Board Layout -->
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="bg-amber-50/70 border border-amber-200/50 p-4 rounded-xl shadow-sm rotate-[-1deg] hover:rotate-0 transition-transform duration-300">
+                            <p class="text-xs font-mono text-amber-800 mb-1">Guest_9202</p>
+                            <p class="text-xs text-zinc-700 leading-relaxed font-light">"공간의 본질에 대한 철학이 너무 인상적이에요. 성수동 타워 설계 잘 보았습니다!"</p>
                         </div>
-                        <div>
-                            <label class="block text-xs uppercase tracking-wider text-arch-gray font-semibold mb-2" for="project-type">프로젝트 용도</label>
-                            <select class="w-full bg-arch-bg border border-arch-grid focus:border-arch-accent rounded-lg px-4 py-3 text-sm outline-none transition-all font-light appearance-none" id="project-type">
-                                <option value="residential">단독/공동 주택 (Residential)</option>
-                                <option value="commercial">근린생활/상업시설 (Commercial)</option>
-                                <option value="public">문화/공공 건축 (Public/Culture)</option>
-                                <option value="interior">공간 재생 및 리모델링</option>
-                            </select>
+                        <div class="bg-blue-50/70 border border-blue-200/50 p-4 rounded-xl shadow-sm rotate-[1deg] hover:rotate-0 transition-transform duration-300">
+                            <p class="text-xs font-mono text-blue-800 mb-1">Archi_Fan</p>
+                            <p class="text-xs text-zinc-700 leading-relaxed font-light">"중정이 들어간 단독주택을 짓는 게 꿈인데 포트폴리오를 보니 영감이 솟구치네요."</p>
                         </div>
                     </div>
+                </div>
 
-                    <div>
-                        <label class="block text-xs uppercase tracking-wider text-arch-gray font-semibold mb-2" for="address">대지 위치 (예정지 주소)</label>
-                        <input class="w-full bg-arch-bg border border-arch-grid focus:border-arch-accent rounded-lg px-4 py-3 text-sm outline-none transition-all font-light" type="text" id="address" placeholder="경기도 양평군... / 미정일 경우 미정 기입">
-                    </div>
-
-                    <div>
-                        <label class="block text-xs uppercase tracking-wider text-arch-gray font-semibold mb-2" for="message">프로젝트 세부 내용 및 비전</label>
-                        <textarea class="w-full bg-arch-bg border border-arch-grid focus:border-arch-accent rounded-lg px-4 py-3 text-sm outline-none transition-all h-32 resize-none font-light" id="message" required placeholder="원하시는 규모, 층수, 예산, 디자인적 지향점 등을 자유롭게 기재해주세요."></textarea>
-                    </div>
-
-                    <button type="submit" class="w-full bg-arch-dark hover:bg-arch-accent text-white py-4 rounded-lg text-sm font-semibold tracking-widest uppercase transition-colors duration-300">
-                        Inquiry Submit <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
-                    </button>
-                </form>
-
-                <!-- Form Submission Status Alert -->
-                <div id="form-success" class="hidden mt-6 p-4 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-lg text-sm font-light">
-                    <p class="font-semibold flex items-center mb-1"><i class="fa-solid fa-circle-check mr-2"></i>문의가 성공적으로 접수되었습니다.</p>
-                    <p class="text-xs text-emerald-700">기재해주신 주소로 빠른 시일 내에 검토 의견 및 기본 설계 일정에 대해 연락드리겠습니다. 감사합니다.</p>
+                <div>
+                    <!-- External Link to Padlet -->
+                    <a href="https://padlet.com/lsh263426/padlet-r9pwxktelwv8erxb" target="_blank" rel="noopener noreferrer" class="block w-full bg-arch-dark hover:bg-arch-accent text-white py-4 rounded-lg text-sm font-semibold tracking-widest uppercase text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+                        방명록 작성하러 가기 (Padlet) <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                    </a>
+                    <p class="text-[11px] text-arch-gray text-center mt-3 font-light font-mono">PADLET.COM // padlet-r9pwxktelwv8erxb</p>
                 </div>
             </div>
         </div>
@@ -530,6 +513,7 @@
                 <a href="#about" class="hover:text-white transition-colors">Philosophy</a>
                 <a href="#portfolio" class="hover:text-white transition-colors">Projects</a>
                 <a href="#process" class="hover:text-white transition-colors">Process</a>
+                <a href="#contact" class="hover:text-white transition-colors">Guestbook</a>
             </div>
 
             <!-- SNS Icons -->
@@ -819,33 +803,6 @@
         modal.addEventListener('click', (e) => {
             if(e.target === modal) closeProjectModal();
         });
-
-
-        // ------------------ Contact Submission Handler ------------------
-        function handleContactSubmit(event) {
-            event.preventDefault();
-            
-            // Simulate form processing
-            const form = document.getElementById('contactForm');
-            const submitBtn = form.querySelector('button[type="submit"]');
-            const successAlert = document.getElementById('form-success');
-
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = `Sending... <i class="fa-solid fa-spinner animate-spin ml-2"></i>`;
-
-            setTimeout(() => {
-                form.reset();
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = `Inquiry Submit <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>`;
-                
-                successAlert.classList.remove('hidden');
-                successAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                
-                setTimeout(() => {
-                    successAlert.classList.add('hidden');
-                }, 8000);
-            }, 1500);
-        }
 
 
         // =================================================================

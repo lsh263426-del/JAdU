@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARCHI-tecture | ARCHITECT PORTFOLIO</title>
+    <title>STUDIO ARCHI | ARCHITECT PORTFOLIO</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts (Inter & Noto Sans KR) -->
@@ -53,6 +53,7 @@
         /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 6px;
+            height: 6px;
         }
         ::-webkit-scrollbar-track {
             background: #fbfbfa;
@@ -145,7 +146,7 @@
             <div class="lg:col-span-4 flex items-end justify-center lg:justify-end pb-12">
                 <div class="flex items-center space-x-3 text-xs tracking-widest uppercase text-arch-gray select-none pointer-events-auto bg-white/50 px-4 py-2 border border-arch-grid rounded-lg">
                     <i class="fa-solid fa-circle-nodes animate-spin" style="animation-duration: 4s;"></i>
-                    <span>3D 캔버스를 회전하고 탐색해 보세요</span>
+                    <span>3D 구조체를 회전하여 탐색해보세요</span>
                 </div>
             </div>
         </div>
@@ -219,7 +220,7 @@
                 <div class="p-8 bg-arch-dark text-white rounded-xl shadow-md mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                     <div class="text-center md:text-left">
                         <span class="text-[10px] tracking-widest text-arch-accent font-bold uppercase block mb-1">Architect Lead</span>
-                        <h4 class="text-2xl font-light tracking-wide mb-1">한 지 수 <span class="text-xs font-semibold text-arch-accent ml-2">Jisu Han</span></h4>
+                        <h4 class="text-2xl font-light tracking-wide mb-1">이 상 훈 <span class="text-xs font-semibold text-arch-accent ml-2">Sang Hun</span></h4>
                         <p class="text-xs text-zinc-400 font-mono">Principal Architect / KIRA</p>
                     </div>
                     <div class="md:col-span-2 text-sm text-zinc-300 font-light leading-relaxed border-t md:border-t-0 md:border-l border-zinc-700 pt-6 md:pt-0 md:pl-8">
@@ -250,9 +251,9 @@
         <!-- Project Grid -->
         <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Project Card 1 (Residential) -->
-            <div class="project-card bg-white border border-arch-grid rounded-xl overflow-hidden shadow-sm group hover:shadow-xl hover:border-arch-accent/40 transition-all duration-500" data-category="residential" onclick="openProjectModal(0)">
+            <div class="project-card bg-white border border-arch-grid rounded-xl overflow-hidden shadow-sm group hover:shadow-xl hover:border-arch-accent/40 transition-all duration-500 cursor-pointer" data-category="residential" onclick="openProjectModal(0)">
                 <div class="relative h-64 overflow-hidden bg-zinc-200">
-                    <img src="https://placehold.co/800x600/1e293b/ffffff?text=FOREST+VOID+HOUSE" alt="Forest Void House" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://placehold.co/800x600/3f3f46/ffffff?text=Architecture+Project'">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Forest Void House" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://placehold.co/800x600/3f3f46/ffffff?text=Architecture+Project'">
                     <div class="absolute top-4 left-4 bg-arch-dark/80 backdrop-blur text-white text-[10px] font-bold tracking-widest px-3 py-1 uppercase rounded">Residential</div>
                 </div>
                 <div class="p-6">
@@ -269,9 +270,9 @@
             </div>
 
             <!-- Project Card 2 (Commercial) -->
-            <div class="project-card bg-white border border-arch-grid rounded-xl overflow-hidden shadow-sm group hover:shadow-xl hover:border-arch-accent/40 transition-all duration-500" data-category="commercial" onclick="openProjectModal(1)">
+            <div class="project-card bg-white border border-arch-grid rounded-xl overflow-hidden shadow-sm group hover:shadow-xl hover:border-arch-accent/40 transition-all duration-500 cursor-pointer" data-category="commercial" onclick="openProjectModal(1)">
                 <div class="relative h-64 overflow-hidden bg-zinc-200">
-                    <img src="https://placehold.co/800x600/27272a/ffffff?text=LUMIN+GLASS+TOWER" alt="Lumin Glass Tower" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://placehold.co/800x600/3f3f46/ffffff?text=Architecture+Project'">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Lumin Glass Tower" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://placehold.co/800x600/3f3f46/ffffff?text=Architecture+Project'">
                     <div class="absolute top-4 left-4 bg-arch-dark/80 backdrop-blur text-white text-[10px] font-bold tracking-widest px-3 py-1 uppercase rounded">Commercial</div>
                 </div>
                 <div class="p-6">
@@ -288,9 +289,9 @@
             </div>
 
             <!-- Project Card 3 (Public/Culture) -->
-            <div class="project-card bg-white border border-arch-grid rounded-xl overflow-hidden shadow-sm group hover:shadow-xl hover:border-arch-accent/40 transition-all duration-500" data-category="public" onclick="openProjectModal(2)">
+            <div class="project-card bg-white border border-arch-grid rounded-xl overflow-hidden shadow-sm group hover:shadow-xl hover:border-arch-accent/40 transition-all duration-500 cursor-pointer" data-category="public" onclick="openProjectModal(2)">
                 <div class="relative h-64 overflow-hidden bg-zinc-200">
-                    <img src="https://placehold.co/800x600/0f172a/ffffff?text=BRICK+WAVE+MUSEUM" alt="Brick Wave Museum" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://placehold.co/800x600/3f3f46/ffffff?text=Architecture+Project'">
+                    <img src="https://images.unsplash.com/photo-1558036117-15d82a90b9b1?auto=format&fit=crop&w=800&q=80" alt="Brick Wave Museum" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://placehold.co/800x600/3f3f46/ffffff?text=Architecture+Project'">
                     <div class="absolute top-4 left-4 bg-arch-dark/80 backdrop-blur text-white text-[10px] font-bold tracking-widest px-3 py-1 uppercase rounded">Public</div>
                 </div>
                 <div class="p-6">
@@ -307,9 +308,9 @@
             </div>
 
             <!-- Project Card 4 (Residential) -->
-            <div class="project-card bg-white border border-arch-grid rounded-xl overflow-hidden shadow-sm group hover:shadow-xl hover:border-arch-accent/40 transition-all duration-500" data-category="residential" onclick="openProjectModal(3)">
+            <div class="project-card bg-white border border-arch-grid rounded-xl overflow-hidden shadow-sm group hover:shadow-xl hover:border-arch-accent/40 transition-all duration-500 cursor-pointer" data-category="residential" onclick="openProjectModal(3)">
                 <div class="relative h-64 overflow-hidden bg-zinc-200">
-                    <img src="https://placehold.co/800x600/334155/ffffff?text=SILENT+HILL+VILLA" alt="Silent Hill Villa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://placehold.co/800x600/3f3f46/ffffff?text=Architecture+Project'">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Silent Hill Villa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://placehold.co/800x600/3f3f46/ffffff?text=Architecture+Project'">
                     <div class="absolute top-4 left-4 bg-arch-dark/80 backdrop-blur text-white text-[10px] font-bold tracking-widest px-3 py-1 uppercase rounded">Residential</div>
                 </div>
                 <div class="p-6">
@@ -326,9 +327,9 @@
             </div>
 
             <!-- Project Card 5 (Commercial) -->
-            <div class="project-card bg-white border border-arch-grid rounded-xl overflow-hidden shadow-sm group hover:shadow-xl hover:border-arch-accent/40 transition-all duration-500" data-category="commercial" onclick="openProjectModal(4)">
+            <div class="project-card bg-white border border-arch-grid rounded-xl overflow-hidden shadow-sm group hover:shadow-xl hover:border-arch-accent/40 transition-all duration-500 cursor-pointer" data-category="commercial" onclick="openProjectModal(4)">
                 <div class="relative h-64 overflow-hidden bg-zinc-200">
-                    <img src="https://placehold.co/800x600/18181b/ffffff?text=PLAZA+TERRACE+CAFE" alt="Plaza Terrace Cafe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://placehold.co/800x600/3f3f46/ffffff?text=Architecture+Project'">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Plaza Terrace Cafe" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://placehold.co/800x600/3f3f46/ffffff?text=Architecture+Project'">
                     <div class="absolute top-4 left-4 bg-arch-dark/80 backdrop-blur text-white text-[10px] font-bold tracking-widest px-3 py-1 uppercase rounded">Commercial</div>
                 </div>
                 <div class="p-6">
@@ -345,9 +346,9 @@
             </div>
 
             <!-- Project Card 6 (Public/Culture) -->
-            <div class="project-card bg-white border border-arch-grid rounded-xl overflow-hidden shadow-sm group hover:shadow-xl hover:border-arch-accent/40 transition-all duration-500" data-category="public" onclick="openProjectModal(5)">
+            <div class="project-card bg-white border border-arch-grid rounded-xl overflow-hidden shadow-sm group hover:shadow-xl hover:border-arch-accent/40 transition-all duration-500 cursor-pointer" data-category="public" onclick="openProjectModal(5)">
                 <div class="relative h-64 overflow-hidden bg-zinc-200">
-                    <img src="https://placehold.co/800x600/020617/ffffff?text=ECO+CIVIC+LIBRARY" alt="Eco Civic Library" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://placehold.co/800x600/3f3f46/ffffff?text=Architecture+Project'">
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=800&q=80" alt="Eco Civic Library" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.onerror=null; this.src='https://placehold.co/800x600/3f3f46/ffffff?text=Architecture+Project'">
                     <div class="absolute top-4 left-4 bg-arch-dark/80 backdrop-blur text-white text-[10px] font-bold tracking-widest px-3 py-1 uppercase rounded">Public</div>
                 </div>
                 <div class="p-6">
@@ -370,7 +371,7 @@
         <div class="mb-16 text-center">
             <span class="text-[11px] uppercase tracking-widest text-arch-accent font-bold">03 / DESIGN PROCESS</span>
             <h2 class="text-3xl font-bold tracking-tight text-arch-dark mt-2">한 장의 도면이 세워지기까지</h2>
-            <p class="text-arch-gray mt-2 font-light">건축가의 아이디어가 정교한 가공을 거쳐 실체로 완성되는 투명한 단계별 프로세스입니다.</p>
+            <p class="text-arch-gray mt-2 font-light font-sans">건축가의 아이디어가 정교한 가공을 거쳐 실체로 완성되는 투명한 단계별 프로세스입니다.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 relative">
@@ -421,13 +422,13 @@
                     <span class="text-[11px] uppercase tracking-widest text-arch-accent font-bold">04 / ARCHI PARTNERS</span>
                     <h2 class="text-3xl font-bold tracking-tight text-arch-dark mt-2 mb-4">프로젝트 협업 문의</h2>
                     <p class="text-sm text-arch-gray leading-relaxed font-light">
-                        새로운 거주 공간 계획, 도심형 빌딩 신축, 또는 기획 설계 단계의 마스터 플랜 검토가 필요하신가요? 대지 주소와 대략적인 목적을 남겨주시면 면밀히 검토 후 48시간 내에 연락드립니다.
+                        새로운 거주 공간 계획, 도심형 빌딩 신축, 또는 기획 설계 단계의 마스터 플랜 검토가 필요하신가요? 대지 주소와 대략적인 목적을 남겨주시면 면밀히 검토 후 신속하게 연락드리겠습니다.
                     </p>
                 </div>
 
                 <div class="space-y-4 text-sm font-light">
                     <div class="flex items-center space-x-4 p-4 bg-white border border-arch-grid rounded-lg shadow-sm">
-                        <div class="w-10 h-10 rounded-full bg-arch-dark text-white flex items-center justify-center">
+                        <div class="w-10 h-10 rounded-full bg-arch-dark text-white flex items-center justify-center flex-shrink-0">
                             <i class="fa-solid fa-map-location-dot text-sm"></i>
                         </div>
                         <div>
@@ -437,195 +438,187 @@
                     </div>
 
                     <div class="flex items-center space-x-4 p-4 bg-white border border-arch-grid rounded-lg shadow-sm">
-                        <div class="w-10 h-10 rounded-full bg-arch-dark text-white flex items-center justify-center">
+                        <div class="w-10 h-10 rounded-full bg-arch-dark text-white flex items-center justify-center flex-shrink-0">
                             <i class="fa-solid fa-phone-volume text-sm"></i>
                         </div>
                         <div>
-                            <span class="text-xs text-arch-gray block font-mono">DIRECT CALL</span>
-                            <span class="font-medium text-arch-dark">02 - 581 - 9292 (평일 09:30 ~ 18:00)</span>
+                            <span class="text-xs text-arch-gray block font-mono">CONTACT INQUIRY</span>
+                            <span class="font-medium text-arch-dark">+82 (0)2-456-7890 | design@studioarchi.com</span>
                         </div>
                     </div>
 
                     <div class="flex items-center space-x-4 p-4 bg-white border border-arch-grid rounded-lg shadow-sm">
-                        <div class="w-10 h-10 rounded-full bg-arch-dark text-white flex items-center justify-center">
-                            <i class="fa-solid fa-envelope-open-text text-sm"></i>
+                        <div class="w-10 h-10 rounded-full bg-arch-dark text-white flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-clipboard-check text-sm"></i>
                         </div>
                         <div>
-                            <span class="text-xs text-arch-gray block font-mono">EMAIL INQUIRY</span>
-                            <span class="font-medium text-arch-dark">contact@studio-archi.co.kr</span>
+                            <span class="text-xs text-arch-gray block font-mono">KIRA LICENSE</span>
+                            <span class="font-medium text-arch-dark">대한건축사협회 정회원 등록번호 제 12948 호</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Contact Form with Local Submission Handling -->
-            <div class="lg:col-span-7 bg-white p-8 border border-arch-grid rounded-2xl shadow-sm">
-                <form id="contact-form" onsubmit="handleInquirySubmit(event)" class="space-y-6">
+            <!-- Right Contact Form -->
+            <div class="lg:col-span-7 bg-white border border-arch-grid p-8 rounded-2xl shadow-sm">
+                <form id="contactForm" class="space-y-6" onsubmit="handleContactSubmit(event)">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label for="client-name" class="block text-xs font-semibold uppercase tracking-wider text-arch-dark mb-2">성함 또는 기업명 *</label>
-                            <input type="text" id="client-name" required class="w-full px-4 py-3 border border-arch-grid rounded-lg focus:outline-none focus:border-arch-accent transition-colors text-sm" placeholder="홍길동 대표">
+                            <label class="block text-xs uppercase tracking-wider text-arch-gray font-semibold mb-2" for="name">의뢰인 성함 / 사명</label>
+                            <input class="w-full bg-arch-bg border border-arch-grid focus:border-arch-accent rounded-lg px-4 py-3 text-sm outline-none transition-all font-light" type="text" id="name" required placeholder="홍길동">
                         </div>
                         <div>
-                            <label for="client-email" class="block text-xs font-semibold uppercase tracking-wider text-arch-dark mb-2">이메일 주소 *</label>
-                            <input type="email" id="client-email" required class="w-full px-4 py-3 border border-arch-grid rounded-lg focus:outline-none focus:border-arch-accent transition-colors text-sm" placeholder="contact@example.com">
+                            <label class="block text-xs uppercase tracking-wider text-arch-gray font-semibold mb-2" for="email">이메일 주소</label>
+                            <input class="w-full bg-arch-bg border border-arch-grid focus:border-arch-accent rounded-lg px-4 py-3 text-sm outline-none transition-all font-light" type="email" id="email" required placeholder="contact@example.com">
                         </div>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label for="project-type" class="block text-xs font-semibold uppercase tracking-wider text-arch-dark mb-2">설계 의뢰 유형</label>
-                            <select id="project-type" class="w-full px-4 py-3 border border-arch-grid rounded-lg bg-white focus:outline-none focus:border-arch-accent transition-colors text-sm text-arch-gray">
-                                <option value="residential">단독/전원주택 설계</option>
-                                <option value="commercial">상업용 꼬마빌딩/오피스</option>
-                                <option value="interior">인테리어/리모델링</option>
-                                <option value="cultural">공공/문화시설</option>
-                                <option value="etc">기타/마스터플랜</option>
-                            </select>
+                            <label class="block text-xs uppercase tracking-wider text-arch-gray font-semibold mb-2" for="phone">연락처</label>
+                            <input class="w-full bg-arch-bg border border-arch-grid focus:border-arch-accent rounded-lg px-4 py-3 text-sm outline-none transition-all font-light" type="tel" id="phone" placeholder="010-XXXX-XXXX">
                         </div>
                         <div>
-                            <label for="project-site" class="block text-xs font-semibold uppercase tracking-wider text-arch-dark mb-2">건축 예정 대지 위치</label>
-                            <input type="text" id="project-site" class="w-full px-4 py-3 border border-arch-grid rounded-lg focus:outline-none focus:border-arch-accent transition-colors text-sm" placeholder="예: 경기도 용인시 수지구">
+                            <label class="block text-xs uppercase tracking-wider text-arch-gray font-semibold mb-2" for="project-type">프로젝트 용도</label>
+                            <select class="w-full bg-arch-bg border border-arch-grid focus:border-arch-accent rounded-lg px-4 py-3 text-sm outline-none transition-all font-light appearance-none" id="project-type">
+                                <option value="residential">단독/공동 주택 (Residential)</option>
+                                <option value="commercial">근린생활/상업시설 (Commercial)</option>
+                                <option value="public">문화/공공 건축 (Public/Culture)</option>
+                                <option value="interior">공간 재생 및 리모델링</option>
+                            </select>
                         </div>
                     </div>
 
                     <div>
-                        <label for="client-message" class="block text-xs font-semibold uppercase tracking-wider text-arch-dark mb-2">의뢰 내용 및 구상하는 공간 콘셉트 *</label>
-                        <textarea id="client-message" rows="5" required class="w-full px-4 py-3 border border-arch-grid rounded-lg focus:outline-none focus:border-arch-accent transition-colors text-sm" placeholder="대지 평수, 예상 층수, 원하는 공간 구성(예: 단독주택 - 거실 하이보이드 우물천장, 테라스 정원 등)을 기재해 주세요."></textarea>
+                        <label class="block text-xs uppercase tracking-wider text-arch-gray font-semibold mb-2" for="address">대지 위치 (예정지 주소)</label>
+                        <input class="w-full bg-arch-bg border border-arch-grid focus:border-arch-accent rounded-lg px-4 py-3 text-sm outline-none transition-all font-light" type="text" id="address" placeholder="경기도 양평군... / 미정일 경우 미정 기입">
                     </div>
 
-                    <button type="submit" class="w-full bg-arch-dark text-white py-4 px-6 rounded-lg text-sm font-semibold tracking-widest uppercase hover:bg-arch-accent transition-all duration-300 shadow-md">
-                        의뢰 제안서 송신하기
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-arch-gray font-semibold mb-2" for="message">프로젝트 세부 내용 및 비전</label>
+                        <textarea class="w-full bg-arch-bg border border-arch-grid focus:border-arch-accent rounded-lg px-4 py-3 text-sm outline-none transition-all h-32 resize-none font-light" id="message" required placeholder="원하시는 규모, 층수, 예산, 디자인적 지향점 등을 자유롭게 기재해주세요."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-arch-dark hover:bg-arch-accent text-white py-4 rounded-lg text-sm font-semibold tracking-widest uppercase transition-colors duration-300">
+                        Inquiry Submit <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
                     </button>
                 </form>
 
-                <!-- Custom Alert Notification Overlay (Inside Form Container for safe-keeping) -->
-                <div id="form-alert" class="hidden mt-4 p-4 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-lg flex items-center space-x-3">
-                    <i class="fa-solid fa-circle-check text-lg"></i>
-                    <div class="text-sm">
-                        <strong class="font-semibold block">의뢰가 정상적으로 접수되었습니다.</strong>
-                        작성해주신 메일로 담당 건축가가 검토 의견서를 먼저 송부해 드리겠습니다. 감사합니다.
-                    </div>
+                <!-- Form Submission Status Alert -->
+                <div id="form-success" class="hidden mt-6 p-4 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-lg text-sm font-light">
+                    <p class="font-semibold flex items-center mb-1"><i class="fa-solid fa-circle-check mr-2"></i>문의가 성공적으로 접수되었습니다.</p>
+                    <p class="text-xs text-emerald-700">기재해주신 주소로 빠른 시일 내에 검토 의견 및 기본 설계 일정에 대해 연락드리겠습니다. 감사합니다.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-arch-dark text-white pt-16 pb-12 border-t border-zinc-800">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-            <div class="md:col-span-2 space-y-6">
-                <div class="flex items-baseline space-x-2">
-                    <span class="text-2xl font-bold tracking-widest">STUDIO ARCHI</span>
+    <footer class="bg-arch-dark text-zinc-400 py-12 border-t border-zinc-800 text-xs tracking-wider select-none">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex flex-col items-center md:items-start space-y-2">
+                <div class="flex items-baseline space-x-2 text-white">
+                    <span class="text-sm font-bold tracking-widest">STUDIO ARCHI</span>
+                    <span class="text-[9px] uppercase tracking-widest text-arch-accent font-semibold">PARTNERS</span>
                 </div>
-                <p class="text-sm text-zinc-400 font-light max-w-sm leading-relaxed">
-                    공간에 가치를 입히고 사용자의 삶에 예술적인 질서를 제공하는 대표 건축설계사무소입니다. 지속 가능한 공법과 미니멀한 설계가 우리의 지향점입니다.
-                </p>
-                <div class="flex space-x-4">
-                    <a href="#" class="w-10 h-10 rounded-full border border-zinc-700 hover:border-arch-accent flex items-center justify-center text-zinc-400 hover:text-white transition-all"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="w-10 h-10 rounded-full border border-zinc-700 hover:border-arch-accent flex items-center justify-center text-zinc-400 hover:text-white transition-all"><i class="fa-brands fa-pinterest"></i></a>
-                    <a href="#" class="w-10 h-10 rounded-full border border-zinc-700 hover:border-arch-accent flex items-center justify-center text-zinc-400 hover:text-white transition-all"><i class="fa-brands fa-youtube"></i></a>
-                </div>
+                <p class="font-light text-zinc-500 text-center md:text-left">© 2026 STUDIO ARCHI PARTNERS. All Rights Reserved.</p>
             </div>
 
-            <div class="space-y-4">
-                <h4 class="text-sm font-semibold uppercase tracking-widest text-zinc-300">Quick Links</h4>
-                <ul class="space-y-2 text-sm text-zinc-400 font-light">
-                    <li><a href="#hero" class="hover:text-white transition-colors">Home</a></li>
-                    <li><a href="#about" class="hover:text-white transition-colors">Philosophy</a></li>
-                    <li><a href="#portfolio" class="hover:text-white transition-colors">Projects</a></li>
-                    <li><a href="#process" class="hover:text-white transition-colors">Design Process</a></li>
-                </ul>
+            <!-- Footer Links -->
+            <div class="flex flex-wrap justify-center gap-8 text-[11px] uppercase tracking-widest">
+                <a href="#hero" class="hover:text-white transition-colors">Top</a>
+                <a href="#about" class="hover:text-white transition-colors">Philosophy</a>
+                <a href="#portfolio" class="hover:text-white transition-colors">Projects</a>
+                <a href="#process" class="hover:text-white transition-colors">Process</a>
             </div>
 
-            <div class="space-y-4">
-                <h4 class="text-sm font-semibold uppercase tracking-widest text-zinc-300">Licensing</h4>
-                <p class="text-xs text-zinc-500 font-light leading-relaxed">
-                    All blueprints, isometric diagrams, and 3D rendering designs generated are licensed under Studio Archi Partners. Unauthorized reproduction is strictly prohibited by KIRA regulation.
-                </p>
-            </div>
-        </div>
-
-        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-zinc-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-zinc-500 font-mono">
-            <div>&copy; 2026 Studio Archi. All rights reserved.</div>
-            <div class="flex space-x-6">
-                <a href="#" class="hover:text-white">Privacy Policy</a>
-                <a href="#" class="hover:text-white">Terms of Use</a>
+            <!-- SNS Icons -->
+            <div class="flex space-x-4 text-base">
+                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Detailed Project Modal -->
-    <div id="project-modal" class="fixed inset-0 z-50 overflow-y-auto hidden">
-        <div class="flex items-center justify-center min-h-screen p-4 sm:p-6 text-center">
-            <!-- Modal Backdrop Overlay -->
-            <div class="fixed inset-0 bg-arch-dark/60 backdrop-blur-sm transition-opacity" onclick="closeProjectModal()"></div>
 
-            <!-- Modal Content Card -->
-            <div class="inline-block bg-white text-left align-middle rounded-2xl overflow-hidden shadow-2xl transform transition-all max-w-4xl w-full relative z-10 border border-arch-grid">
-                <!-- Close Button -->
-                <button onclick="closeProjectModal()" class="absolute top-4 right-4 z-20 w-10 h-10 bg-white/80 hover:bg-white border border-arch-grid rounded-full flex items-center justify-center text-arch-dark hover:text-arch-accent transition-all">
-                    <i class="fa-solid fa-xmark text-lg"></i>
-                </button>
+    <!-- Project Detail Modal Box -->
+    <div id="project-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-white border border-arch-grid w-full max-w-4xl rounded-2xl overflow-hidden shadow-2xl relative max-h-[90vh] flex flex-col transform scale-95 transition-transform duration-300" onclick="event.stopPropagation()">
+            <!-- Close Button -->
+            <button onclick="closeProjectModal()" class="absolute top-4 right-4 z-10 w-10 h-10 bg-white/90 hover:bg-white text-arch-dark rounded-full shadow-md flex items-center justify-center hover:scale-105 transition-all outline-none">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
 
-                <div class="grid grid-cols-1 lg:grid-cols-12">
-                    <!-- Image Showcase Area -->
-                    <div class="lg:col-span-7 bg-zinc-100 relative h-72 lg:h-[480px]">
-                        <img id="modal-img" src="" alt="Project image preview" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 text-white">
-                            <span id="modal-badge" class="bg-arch-accent/90 backdrop-blur text-[10px] font-bold tracking-widest px-3 py-1 uppercase rounded mb-2 inline-block">Category</span>
-                            <h3 id="modal-title" class="text-2xl sm:text-3xl font-bold">Project Title</h3>
+            <!-- Modal Content (Scrollable Container) -->
+            <div class="overflow-y-auto flex-1">
+                <div class="relative h-64 md:h-96 bg-zinc-200">
+                    <img id="modal-img" src="" alt="Project Title" class="w-full h-full object-cover">
+                    <div id="modal-badge" class="absolute bottom-6 left-6 bg-arch-dark/90 backdrop-blur text-white text-xs font-bold tracking-widest px-4 py-1.5 uppercase rounded-lg">Category</div>
+                </div>
+                
+                <div class="p-8">
+                    <div class="flex flex-col md:flex-row md:items-baseline justify-between border-b border-arch-grid pb-6 mb-6 gap-2">
+                        <div>
+                            <h3 id="modal-title" class="text-3xl font-bold text-arch-dark">Project Title</h3>
+                            <p id="modal-sub" class="text-sm text-arch-gray mt-2 font-light">Sub explanation or design statement</p>
                         </div>
+                        <span id="modal-year" class="text-lg font-mono font-bold text-arch-accent">2024</span>
                     </div>
 
-                    <!-- Meta & Detailed Description Area -->
-                    <div class="lg:col-span-5 p-8 flex flex-col justify-between max-h-[480px] overflow-y-auto">
-                        <div class="space-y-6">
-                            <div>
-                                <span class="text-[10px] uppercase tracking-widest text-arch-accent font-bold block mb-1">Concept Explanation</span>
-                                <p id="modal-desc" class="text-sm text-arch-gray leading-relaxed font-light">
-                                    설명이 들어갑니다.
-                                </p>
-                            </div>
-
-                            <div class="space-y-3 pt-6 border-t border-arch-grid">
-                                <span class="text-[10px] uppercase tracking-widest text-arch-accent font-bold block mb-2">Specifications</span>
-                                
-                                <div class="grid grid-cols-2 gap-4 text-xs font-mono text-arch-gray">
-                                    <div>
-                                        <span class="block text-[10px] text-zinc-400 uppercase">Year</span>
-                                        <span id="modal-year" class="text-arch-dark font-medium">2024</span>
-                                    </div>
-                                    <div>
-                                        <span class="block text-[10px] text-zinc-400 uppercase">Site Area</span>
-                                        <span id="modal-area" class="text-arch-dark font-medium">100m²</span>
-                                    </div>
-                                    <div>
-                                        <span class="block text-[10px] text-zinc-400 uppercase">Location</span>
-                                        <span id="modal-loc" class="text-arch-dark font-medium">Location</span>
-                                    </div>
-                                    <div>
-                                        <span class="block text-[10px] text-zinc-400 uppercase">Structure</span>
-                                        <span id="modal-structure" class="text-arch-dark font-medium">Wood / Concrete</span>
-                                    </div>
-                                </div>
-                            </div>
+                    <!-- Layout of detailed architectural specification sheet -->
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                        <div class="md:col-span-8">
+                            <h4 class="text-xs uppercase tracking-widest font-bold text-arch-dark mb-3"><i class="fa-solid fa-compass-drafting mr-2"></i>Design Statement</h4>
+                            <p id="modal-desc" class="text-sm text-arch-gray leading-relaxed font-light whitespace-pre-line">
+                                여기에 상세 건축 설계 기획 의도와 설명이 대입됩니다.
+                            </p>
                         </div>
 
-                        <div class="pt-6 mt-6 border-t border-arch-grid">
-                            <button onclick="copyProjectSummary()" class="w-full border border-arch-dark text-arch-dark hover:bg-arch-dark hover:text-white py-2.5 px-4 rounded-lg text-xs font-bold tracking-widest uppercase transition-all duration-300 flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-share-nodes"></i> 프로젝트 세부정보 복사하기
-                            </button>
+                        <!-- Spec sheet list -->
+                        <div class="md:col-span-4 bg-arch-bg p-6 rounded-xl border border-arch-grid font-light">
+                            <h4 class="text-xs uppercase tracking-widest font-bold text-arch-dark mb-4 border-b border-arch-grid pb-2 font-mono">SPECIFICATION</h4>
+                            <div class="space-y-3 text-xs text-arch-gray">
+                                <div class="flex justify-between">
+                                    <span class="font-semibold text-arch-dark">위치 (Location)</span>
+                                    <span id="spec-loc">양평군</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-semibold text-arch-dark">대지면적 (Area)</span>
+                                    <span id="spec-area">218㎡</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-semibold text-arch-dark">구조 (Structure)</span>
+                                    <span id="spec-struct">철근콘크리트조</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-semibold text-arch-dark">마감재 (Finish)</span>
+                                    <span id="spec-finish">노출콘크리트, 탄화목</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-semibold text-arch-dark">대표건축사 (Lead)</span>
+                                    <span id="spec-architect">이상훈 (Sang Hun)</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <div class="bg-arch-bg border-t border-arch-grid px-8 py-4 flex justify-end">
+                <button onclick="closeProjectModal()" class="bg-arch-dark hover:bg-arch-accent text-white px-6 py-2.5 rounded-lg text-xs font-semibold tracking-widest uppercase transition-colors">
+                    Close Details
+                </button>
+            </div>
         </div>
     </div>
 
+
+    <!-- ============================================ -->
+    <!-- INTERACTIVE SCRIPTS & LOGIC (Three.js + Interaction) -->
+    <!-- ============================================ -->
     <script>
-        // --- MOBILE MENU LOGIC ---
+        // ------------------ Mobile Navigation Drawer Toggle ------------------
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const line1 = document.getElementById('line1');
@@ -633,50 +626,53 @@
         const line3 = document.getElementById('line3');
         const mobileLinks = document.querySelectorAll('.mobile-link');
 
-        menuBtn.addEventListener('click', () => {
-            const isOpen = mobileMenu.classList.contains('translate-x-0');
-            if (isOpen) {
-                mobileMenu.classList.remove('translate-x-0');
-                mobileMenu.classList.add('translate-x-full');
-                line1.classList.remove('rotate-45', 'translate-y-2');
-                line2.classList.remove('opacity-0');
-                line3.classList.remove('-rotate-45', '-translate-y-2.5');
-            } else {
-                mobileMenu.classList.remove('translate-x-full');
-                mobileMenu.classList.add('translate-x-0');
-                line1.classList.add('rotate-45', 'translate-y-2');
-                line2.classList.add('opacity-0');
-                line3.classList.add('-rotate-45', '-translate-y-2.5');
-            }
-        });
+        let isMenuOpen = false;
 
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('translate-x-full');
+                line1.classList.add('rotate-45', 'translate-y-2', 'bg-white');
+                line2.classList.add('opacity-0');
+                line3.classList.add('-rotate-45', '-translate-y-2', 'bg-white');
+                menuBtn.classList.add('text-white');
+            } else {
+                mobileMenu.classList.add('translate-x-full');
+                line1.classList.remove('rotate-45', 'translate-y-2', 'bg-white');
+                line2.classList.remove('opacity-0');
+                line3.classList.remove('-rotate-45', '-translate-y-2', 'bg-white');
+                menuBtn.classList.remove('text-white');
+            }
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
-                mobileMenu.classList.add('translate-x-full');
-                mobileMenu.classList.remove('translate-x-0');
-                line1.classList.remove('rotate-45', 'translate-y-2');
-                line2.classList.remove('opacity-0');
-                line3.classList.remove('-rotate-45', '-translate-y-2.5');
+                if (isMenuOpen) toggleMenu();
             });
         });
 
-        // --- PORTFOLIO PROJECT FILTERING LOGIC ---
+        // ------------------ Project Archive Filtering ------------------
         function filterProjects(category) {
             const cards = document.querySelectorAll('.project-card');
             const buttons = document.querySelectorAll('.filter-btn');
             
-            // Adjust active filter button design styling
+            // Toggle active filter button style
             buttons.forEach(btn => {
-                btn.classList.remove('active-filter', 'bg-arch-dark', 'text-white', 'border-arch-dark');
-                btn.classList.add('bg-white', 'text-arch-gray', 'border-arch-grid');
+                if(btn.textContent.toLowerCase().includes(category) || (category === 'all' && btn.textContent === 'All')) {
+                    btn.classList.add('active-filter', 'bg-arch-dark', 'text-white', 'border-arch-dark');
+                    btn.classList.remove('bg-white', 'text-arch-gray', 'border-arch-grid', 'hover:border-arch-dark');
+                } else {
+                    btn.classList.remove('active-filter', 'bg-arch-dark', 'text-white', 'border-arch-dark');
+                    btn.classList.add('bg-white', 'text-arch-gray', 'border-arch-grid', 'hover:border-arch-dark');
+                }
             });
-            event.currentTarget.classList.add('active-filter', 'bg-arch-dark', 'text-white', 'border-arch-dark');
-            event.currentTarget.classList.remove('bg-white', 'text-arch-gray', 'border-arch-grid');
 
-            // Toggle card visibility smoothly
+            // Filtering Animation
             cards.forEach(card => {
-                if (category === 'all' || card.getAttribute('data-category') === category) {
-                    card.classList.remove('hidden');
+                const cardCat = card.getAttribute('data-category');
+                if (category === 'all' || cardCat === category) {
+                    card.style.display = 'block';
                     setTimeout(() => {
                         card.style.opacity = '1';
                         card.style.transform = 'scale(1)';
@@ -685,265 +681,320 @@
                     card.style.opacity = '0';
                     card.style.transform = 'scale(0.95)';
                     setTimeout(() => {
-                        card.classList.add('hidden');
+                        card.style.display = 'none';
                     }, 300);
                 }
             });
         }
 
-        // --- DETAILED MODAL SCHEMATIC ARCHIVE DATA ---
+        // ------------------ Project Database ------------------
         const projectData = [
             {
                 title: "Forest Void House",
-                category: "Residential",
-                desc: "건물이 위치한 자연의 경사를 조각하듯 파내어(Void), 햇볕이 깊이 스며들 수 있는 중정을 중심에 구성한 고급 단독주택입니다. 외장은 노출콘크리트와 탄화목재를 정밀하게 결합해 시간의 축적을 고스란히 느낄 수 있도록 하였습니다.",
+                sub: "빛의 유입과 프라이버시 확보를 유기적으로 풀어낸 숲 속 중정 단독주택",
                 year: "2024",
-                area: "218㎡ (GFA)",
-                loc: "경기도 양평군",
-                structure: "RC (철근 콘크리트) + 목구조 혼합",
-                img: "https://placehold.co/800x600/1e293b/ffffff?text=FOREST+VOID+HOUSE"
+                category: "Residential",
+                img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+                desc: "울창한 참나무 숲으로 둘러싸인 완만한 경사지에 위치한 이 단독주택은 자연 경관을 전면 수용하면서도 프라이버시를 지키는 비움(Void)의 미학을 담고 있습니다.\n\n주택 중심에 배치된 정방형 중정은 거실, 주방, 안방으로 향하는 시선을 하나로 모으는 동시에 계절의 변화와 변화무쌍한 하루 동안의 자연광을 집 전체 깊숙한 곳까지 들여보냅니다. 노출 콘크리트 외장마감과 탄화 우드의 섬세한 매칭은 숲과 조우하며 시간이 지남에 따라 아름답게 숲의 일부로 동화되어 갑니다.",
+                loc: "경기 양평군",
+                area: "218㎡ (약 66평)",
+                struct: "철근콘크리트 구조 (RC)",
+                finish: "외벽 노출콘크리트, 천연 탄화목 사이딩, 로이 이중 복층유리"
             },
             {
                 title: "Lumin Glass Tower",
-                category: "Commercial",
-                desc: "지속가능성과 유연성에 방점을 둔 도심 소형 오피스 빌딩입니다. 파사드 표면에 설치된 센서형 글래스 루버는 직사광선을 최적 제어하여 연간 냉난방 부하를 약 35% 감소시킵니다. 내부 기둥이 없는 무주공간 설계로 사무 편의를 증대했습니다.",
+                sub: "외벽 이중 스킨 글래스 루버를 활용한 고효율 미래형 소형 오피스 빌딩",
                 year: "2025",
-                area: "1,450㎡ (GFA)",
+                category: "Commercial",
+                img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+                desc: "서울 성수동의 좁은 상업 지구 코너 필지에 자리 잡은 Lumin Glass Tower는 고유한 '디지털 파사드 루버 시스템'을 장착하여 일사량 분석에 기반한 에너지 효율 극대화를 달성했습니다.\n\n전면 유리 가벽인 'Double Skin'은 외부 소음을 무려 32dB 이상 소멸시킴과 동시에 사계절 외기의 가혹한 온도로부터 내부 구조물을 방어합니다. 입주사의 요구에 맞추어 유연하게 벽체를 이동할 수 있는 가변형 평면 설계(Free Plan)가 적용된 기둥 최소화 공법을 결합하였습니다.",
                 loc: "서울 성동구 성수동",
-                structure: "SRC (철골철근콘크리트)",
-                img: "https://placehold.co/800x600/27272a/ffffff?text=LUMIN+GLASS+TOWER"
+                area: "1,450㎡ (지하 2층 ~ 지상 8층)",
+                struct: "철골철근콘크리트구조 (SRC)",
+                finish: "유광 스텐 가공패널, 로이 삼중 스킨 글래스, 셀프레벨링 콘크리트 바닥"
             },
             {
                 title: "Brick Wave Museum",
-                category: "Public",
-                desc: "전통 조적벽 공법에 구조해석 매개변수 코딩 모델링을 가미하여, 부드럽게 넘실거리는 질감의 파사드를 표현한 문화공간입니다. 외벽의 곡면을 따라 일렁이는 빛의 계조가 시적인 분위기를 구현해냅니다.",
+                sub: "전통 벽돌 조적 방식을 현대적 굴곡 곡면으로 해체 분석한 문화센터",
                 year: "2023",
-                area: "3,210㎡ (GFA)",
-                loc: "강원특별자치도 춘천시",
-                structure: "조적조 보강 구조 + 철강 트러스",
-                img: "https://placehold.co/800x600/0f172a/ffffff?text=BRICK+WAVE+MUSEUM"
+                category: "Public",
+                img: "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?auto=format&fit=crop&w=1200&q=80",
+                desc: "춘천의 소박하고 고요한 소양강 자락에 건립된 미술관 겸 문화 복합 단지입니다. 전통적인 점토 벽돌을 매개로 삼아 컴퓨터 연산 설계(Parametric Design)와 장인의 손길을 합작하여 파도의 기형적 곡면을 완성했습니다.\n\n벽돌 사이의 간격을 일정하게 벌리는 영롱조적 방식을 통해, 외부에서는 불투명한 흙빛 매스처럼 보이지만 밤이 되면 내부의 은은한 인공 조명이 벽돌 틈새로 흘러나와 주변 지역을 신비롭게 밝히는 등대의 역할을 겸하게 하였습니다.",
+                loc: "강원 춘천시",
+                area: "3,210㎡ (지하 1층 ~ 지상 3층)",
+                struct: "무량판 구조 + 강관 트러스 프레임",
+                finish: "전통 토벽돌 12만 장 정밀 조적, 삼원 가공 송판 노출콘크리트"
             },
             {
                 title: "Silent Hill Villa",
-                category: "Residential",
-                desc: "기존의 자연 암반 및 계곡을 훼손하지 않고 캔틸레버식(돌출식) 기초 공법을 적용해 지면으로부터 공중에 살짝 띄운 형태로 건립된 절벽 위 별장 주택입니다. 모든 실내 창을 남서향으로 열어 극적인 파노라마 마운틴 뷰를 만끽할 수 있습니다.",
+                sub: "가파른 산세를 해치지 않고 계단식 데크 공법으로 구조화한 절벽 단독주택",
                 year: "2025",
-                area: "185㎡ (GFA)",
+                category: "Residential",
+                img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+                desc: "북한산 암반 지대를 휘감는 높은 급경사의 경사지를 활용한 럭셔리 단독 빌라입니다.\n\n지형에 순응하도록 건물 전체를 계단식 테라스 구조로 입체화하여, 인위적인 성토나 대규모 훼손 작업을 전면 피했습니다. 각 층에 설계된 광활한 목재 데크는 실내 다이닝룸과 연속되어 외부 산세를 방 내부로 완전하게 편입하는 최상의 시각적 차경을 선사합니다.",
                 loc: "서울 종로구 평창동",
-                structure: "강구조 프레임 + 프리캐스트 패널",
-                img: "https://placehold.co/800x600/334155/ffffff?text=SILENT+HILL+VILLA"
+                area: "185㎡ (약 56평)",
+                struct: "강재 트러스 보강형 프리스트레스트 철근 콘크리트",
+                finish: "현무암 석재 타일 마감, 최고급 이페 천연목재 데크, 알루미늄 슬라이딩 창호"
             },
             {
                 title: "Plaza Terrace Cafe",
-                category: "Commercial",
-                desc: "공공 광장의 연장으로서 사람들의 유입과 소통을 극대화하고자 기획된 카페형 공간입니다. 내부를 경사형 입체 테라스 형식으로 조각하여 누구나 편하게 걸터앉아 바깥 광장을 구경하며 쉴 수 있는 도심 속 오아시스가 됩니다.",
+                sub: "외부 광장과 실내 동선이 계단식 벤치형 테라스로 연속되는 열린 카페",
                 year: "2024",
-                area: "410㎡ (GFA)",
-                loc: "경기도 성남시 판교",
-                structure: "RC 구조 + 글래스 커튼월",
-                img: "https://placehold.co/800x600/18181b/ffffff?text=PLAZA+TERRACE+CAFE"
+                category: "Commercial",
+                img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+                desc: "판교 테크노밸리 인근 주거 단지 가장자리에 설계된 베이커리 쇼룸 겸 오피스 라이브러리 카페입니다.\n\n공용 광장 경계면 전체를 전면 폴딩 도어 처리하여, 도시의 활기 넘치는 소통 흐름을 건물 내부로 자유롭게 흘려보냅니다. 계단형 벤치 구조를 중심 코어 삼아 층간 분절을 완화하고, 일방적인 음료 섭취 공간을 넘어 유연한 커뮤니티가 발생할 수 있도록 유도했습니다.",
+                loc: "경기 성남시 판교동",
+                area: "410㎡ (지상 1, 2층 복층)",
+                struct: "노출 형강조 및 철근 콘크리트 조합",
+                finish: "마이크로시멘트 도장, 에코 코르크 단열재 패널, 강화 복층 안전유리"
             },
             {
                 title: "Eco Civic Library",
-                category: "Public",
-                desc: "지붕 전체에 대형 친환경 수목 숲과 유기 농업 정원을 결합하고, 빗물을 여과 및 순환시키는 워터하우스 설비를 적용한 미래지향 도서관입니다. 거대한 우드 3차원 보 구조가 웅장하면서도 포근한 내부 인상을 만듭니다.",
+                sub: "중앙 아트리움의 기둥 없는 트러스 하이보이드 설계가 돋보이는 친환경 도서관",
                 year: "2026",
-                area: "4,800㎡ (GFA)",
-                loc: "세종특별자치시",
-                structure: "글루램 (대형 구조용 집성재)",
-                img: "https://placehold.co/800x600/020617/ffffff?text=ECO+CIVIC+LIBRARY"
+                category: "Public",
+                img: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1200&q=80",
+                desc: "세종특별자치시 공공 공원 부지 중앙에 세워진 Eco Civic Library는 제로에너지 등급(ZEB)을 지향한 차세대 지식 문화 공간입니다.\n\n공동체를 상징하는 지름 24미터의 둥근 중앙 하이보이드 홀(Void)은 거대한 수평 목구조 대들보 시스템과 고단열 스카이라이트 유리를 통해 실내 기둥을 완전 배제하여 탁 트인 개방감을 제공합니다. 친환경 중력식 자연 환기 터널 설계가 포함되어 쾌적하고 맑은 환경을 보장합니다.",
+                loc: "세종특별자치시 도담동",
+                area: "4,800㎡ (지하 1층 ~ 지상 4층)",
+                struct: "집성재(Glulam) 중목구조 복합 하이브리드 설계",
+                finish: "스프루스 구조재 패널, 저탄소 에코시멘트 배합 몰탈, 고효율 태양광 BIPV 시스템"
             }
         ];
 
-        // --- MODAL POPUP INTERACTIONS ---
+        // ------------------ Project Detail Modal Logic ------------------
+        const modal = document.getElementById('project-modal');
+        const modalImg = document.getElementById('modal-img');
+        const modalTitle = document.getElementById('modal-title');
+        const modalSub = document.getElementById('modal-sub');
+        const modalYear = document.getElementById('modal-year');
+        const modalBadge = document.getElementById('modal-badge');
+        const modalDesc = document.getElementById('modal-desc');
+
+        const specLoc = document.getElementById('spec-loc');
+        const specArea = document.getElementById('spec-area');
+        const specStruct = document.getElementById('spec-struct');
+        const specFinish = document.getElementById('spec-finish');
+
         function openProjectModal(index) {
             const data = projectData[index];
-            document.getElementById('modal-img').src = data.img;
-            document.getElementById('modal-badge').innerText = data.category;
-            document.getElementById('modal-title').innerText = data.title;
-            document.getElementById('modal-desc').innerText = data.desc;
-            document.getElementById('modal-year').innerText = data.year;
-            document.getElementById('modal-area').innerText = data.area;
-            document.getElementById('modal-loc').innerText = data.loc;
-            document.getElementById('modal-structure').innerText = data.structure;
+            if (!data) return;
 
-            const modal = document.getElementById('project-modal');
+            modalImg.src = data.img;
+            modalTitle.textContent = data.title;
+            modalSub.textContent = data.sub;
+            modalYear.textContent = data.year;
+            modalBadge.textContent = data.category;
+            modalDesc.textContent = data.desc;
+
+            specLoc.textContent = data.loc;
+            specArea.textContent = data.area;
+            specStruct.textContent = data.struct;
+            specFinish.textContent = data.finish;
+
+            // Remove hidden first, then apply opacity and transition scaling
             modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden'; // Lock background scrolling
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.querySelector('.transform').classList.remove('scale-95');
+                modal.querySelector('.transform').classList.add('scale-100');
+            }, 10);
+            
+            // Prevent body scroll
+            document.body.style.overflow = 'hidden';
         }
 
         function closeProjectModal() {
-            const modal = document.getElementById('project-modal');
-            modal.classList.add('hidden');
-            document.body.style.overflow = ''; // Unlock background scrolling
-        }
-
-        // Share/Copy summary text clipboard
-        function copyProjectSummary() {
-            const title = document.getElementById('modal-title').innerText;
-            const year = document.getElementById('modal-year').innerText;
-            const loc = document.getElementById('modal-loc').innerText;
-            const summaryText = `[STUDIO ARCHI 프로젝트 포트폴리오] \n작품명: ${title} \n설계연도: ${year} \n대지위치: ${loc}\n자세한 정보는 본 웹사이트를 참조해주세요.`;
-            
-            // Temporary hidden input creation to bypass navigator limitations inside certain iframe environments
-            const tempInput = document.createElement("textarea");
-            tempInput.value = summaryText;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand("copy");
-            document.body.removeChild(tempInput);
-
-            // Temporary change button text to alert success
-            const btn = event.currentTarget;
-            const originalText = btn.innerHTML;
-            btn.innerHTML = `<i class="fa-solid fa-check"></i> 성공적으로 복사되었습니다!`;
-            btn.classList.remove('border-arch-dark', 'text-arch-dark');
-            btn.classList.add('bg-emerald-600', 'border-emerald-600', 'text-white');
-            
+            modal.classList.add('opacity-0');
+            modal.querySelector('.transform').classList.add('scale-95');
+            modal.querySelector('.transform').classList.remove('scale-100');
             setTimeout(() => {
-                btn.innerHTML = originalText;
-                btn.classList.remove('bg-emerald-600', 'border-emerald-600', 'text-white');
-                btn.classList.add('border-arch-dark', 'text-arch-dark');
-            }, 2000);
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }, 300);
         }
 
-        // --- SUBMIT COGNITION FORM LOGIC (NON ALERT) ---
-        function handleInquirySubmit(event) {
+        // Close on clicking overlay bg
+        modal.addEventListener('click', (e) => {
+            if(e.target === modal) closeProjectModal();
+        });
+
+
+        // ------------------ Contact Submission Handler ------------------
+        function handleContactSubmit(event) {
             event.preventDefault();
-            const form = document.getElementById('contact-form');
-            const alertBox = document.getElementById('form-alert');
             
-            // Visual success signaling without alerts
-            alertBox.classList.remove('hidden');
-            form.reset();
-            
-            // Hide alert success state after 7 seconds
+            // Simulate form processing
+            const form = document.getElementById('contactForm');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const successAlert = document.getElementById('form-success');
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `Sending... <i class="fa-solid fa-spinner animate-spin ml-2"></i>`;
+
             setTimeout(() => {
-                alertBox.classList.add('hidden');
-            }, 7000);
+                form.reset();
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = `Inquiry Submit <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>`;
+                
+                successAlert.classList.remove('hidden');
+                successAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                
+                setTimeout(() => {
+                    successAlert.classList.add('hidden');
+                }, 8000);
+            }, 1500);
         }
 
-        // --- STREAMING_CHUNK: Initializing Three.js structural wireframe animation ---
-        // 3D Architectural Wireframe Simulation Scene
-        let scene, camera, renderer, wireframeMesh, structureGrid;
-        const container = document.getElementById('canvas-container');
+
+        // =================================================================
+        // THREE.JS: Interactive 3D Architectural Abstract Model Background
+        // =================================================================
+        let scene, camera, renderer, container;
+        let archStructureGroup;
+        let targetRotationX = 0.05;
+        let targetRotationY = 0.15;
+        let mouseX = 0, mouseY = 0;
+        let windowHalfX = window.innerWidth / 2;
+        let windowHalfY = window.innerHeight / 2;
 
         function initThreeJS() {
-            // Scene Setup
+            container = document.getElementById('canvas-container');
+            if(!container) return;
+
+            // 1. Scene & Camera Setup
             scene = new THREE.Scene();
-            scene.fog = new THREE.FogExp2(0xfbfbfa, 0.015);
+            scene.fog = new THREE.FogExp2(0xfbfbfa, 0.04); // Seamless blend with concrete warm off-white background
 
-            // Camera Setup
-            camera = new THREE.PerspectiveCamera(60, container.clientWidth / container.clientHeight, 0.1, 1000);
-            camera.position.set(0, 5, 12);
-            camera.lookAt(0, 0, 0);
+            camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 1, 100);
+            camera.position.set(0, 5, 20);
 
-            // Renderer Setup
+            // 2. Renderer Setup
             renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            renderer.setPixelRatio(window.devicePixelRatio);
             renderer.setSize(container.clientWidth, container.clientHeight);
-            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            renderer.setClearColor(0x000000, 0); // Transparent background to let CSS grid render
             container.appendChild(renderer.domElement);
 
-            // Architectural Wireframe Building Group
-            const architectureGroup = new THREE.Group();
+            // 3. Create Procedural Architectural Grid & Frame Structure
+            archStructureGroup = new THREE.Group();
+            scene.add(archStructureGroup);
 
-            // Material: Thin structural line style in terracotta rust-brown
-            const lineMaterial = new THREE.LineBasicMaterial({ 
-                color: 0x9a3412, 
-                linewidth: 1, 
-                transparent: true, 
-                opacity: 0.5 
-            });
-
-            const pillarMaterial = new THREE.MeshBasicMaterial({
-                color: 0x18181b,
+            // Structure materials - Premium minimal look
+            const wireframeMat = new THREE.MeshBasicMaterial({
+                color: 0x71717a, // structural gray
                 wireframe: true,
                 transparent: true,
                 opacity: 0.15
             });
 
-            // Create modular geometric blocks resembling blueprint wireframes
-            // Box 1: Core tower
-            const coreGeometry = new THREE.BoxGeometry(4, 8, 4, 3, 6, 3);
-            const coreWire = new THREE.LineSegments(
-                new THREE.EdgesGeometry(coreGeometry),
-                lineMaterial
-            );
-            coreWire.position.y = 2;
-            architectureGroup.add(coreWire);
-
-            // Box 2: Cantilever wing
-            const wingGeometry = new THREE.BoxGeometry(6, 2, 3, 4, 2, 2);
-            const wingWire = new THREE.LineSegments(
-                new THREE.EdgesGeometry(wingGeometry),
-                new THREE.LineBasicMaterial({ color: 0x71717a, transparent: true, opacity: 0.4 })
-            );
-            wingWire.position.set(2, 4, 1.5);
-            architectureGroup.add(wingWire);
-
-            // Box 3: Ground base slab
-            const baseGeometry = new THREE.BoxGeometry(8, 0.5, 8, 4, 1, 4);
-            const baseMesh = new THREE.Mesh(baseGeometry, pillarMaterial);
-            baseMesh.position.y = -2;
-            architectureGroup.add(baseMesh);
-
-            // Adding grid planes indicating design blueprints (Draft Plane)
-            const gridHelper = new THREE.GridHelper(24, 24, 0x9a3412, 0xe4e4e7);
-            gridHelper.position.y = -2.2;
-            scene.add(gridHelper);
-
-            scene.add(architectureGroup);
-
-            // Interaction state variables
-            let targetX = 0;
-            let targetY = 0;
-            const mouseMultiplier = 0.0003;
-
-            // Track mouse coordinates for immersive interactive rotating angle control
-            window.addEventListener('mousemove', (e) => {
-                targetX = (e.clientX - window.innerWidth / 2) * mouseMultiplier;
-                targetY = (e.clientY - window.innerHeight / 2) * mouseMultiplier;
+            const solidMat = new THREE.MeshBasicMaterial({
+                color: 0x9a3412, // Terracotta/Rust Red Accent
+                wireframe: true,
+                transparent: true,
+                opacity: 0.25
             });
 
-            // Handle touch drag alternative
-            window.addEventListener('touchmove', (e) => {
-                if (e.touches.length > 0) {
-                    targetX = (e.touches[0].clientX - window.innerWidth / 2) * mouseMultiplier;
-                    targetY = (e.touches[0].clientY - window.innerHeight / 2) * mouseMultiplier;
+            const lineMat = new THREE.LineBasicMaterial({
+                color: 0x18181b, // Charcoal Solid Frame Lines
+                transparent: true,
+                opacity: 0.35
+            });
+
+            // Build an abstract stepped building-like block structure
+            const buildingBlocks = [
+                { size: [4, 6, 4], pos: [-2, 1, -2] },
+                { size: [3, 8, 3], pos: [2.5, 2, -1] },
+                { size: [5, 3, 5], pos: [0, -1.5, 1] },
+                { size: [6, 1, 6], pos: [0, -3, 0] }, // Foundation plate
+                { size: [2, 10, 2], pos: [-1, 3, 2] }   // Tower block
+            ];
+
+            buildingBlocks.forEach(block => {
+                const geom = new THREE.BoxGeometry(block.size[0], block.size[1], block.size[2]);
+                
+                // Add main wire mesh
+                const mesh = new THREE.Mesh(geom, wireframeMat);
+                mesh.position.set(block.pos[0], block.pos[1], block.pos[2]);
+                archStructureGroup.add(mesh);
+
+                // Add slightly thicker structural edge lines
+                const edges = new THREE.EdgesGeometry(geom);
+                const line = new THREE.LineSegments(edges, lineMat);
+                line.position.copy(mesh.position);
+                archStructureGroup.add(line);
+
+                // Accent block highlights inside (small core structural blocks)
+                if (Math.random() > 0.4) {
+                    const innerGeom = new THREE.BoxGeometry(block.size[0] * 0.4, block.size[1] * 0.4, block.size[2] * 0.4);
+                    const innerMesh = new THREE.Mesh(innerGeom, solidMat);
+                    innerMesh.position.copy(mesh.position);
+                    archStructureGroup.add(innerMesh);
                 }
             });
 
-            // Animation Loop
-            function animate() {
-                requestAnimationFrame(animate);
+            // Add Ground Grid Helper
+            const gridHelper = new THREE.GridHelper(30, 30, 0x9a3412, 0xe4e4e7);
+            gridHelper.position.y = -3.5;
+            gridHelper.material.opacity = 0.4;
+            gridHelper.material.transparent = true;
+            scene.add(gridHelper);
 
-                // Auto rotate building model subtly
-                architectureGroup.rotation.y += 0.002;
-
-                // Mouse interaction responsiveness (lerped for smooth transitioning feel)
-                architectureGroup.rotation.y += (targetX - architectureGroup.rotation.y) * 0.05;
-                architectureGroup.rotation.x += (targetY - architectureGroup.rotation.x) * 0.05;
-
-                // Cap rotation on X to avoid getting upside down
-                architectureGroup.rotation.x = Math.max(-0.4, Math.min(0.4, architectureGroup.rotation.x));
-
-                renderer.render(scene, camera);
-            }
+            // 4. Listeners for Interaction
+            document.addEventListener('mousemove', onDocumentMouseMove);
+            window.addEventListener('resize', onWindowResize);
+            
+            // Touch gestures supporting
+            container.addEventListener('touchmove', onTouchMove, { passive: true });
 
             animate();
-
-            // Window Resizing handling dynamically
-            window.addEventListener('resize', () => {
-                camera.aspect = container.clientWidth / container.clientHeight;
-                camera.updateProjectionMatrix();
-                renderer.setSize(container.clientWidth, container.clientHeight);
-            });
         }
 
-        // Run ThreeJS loop exactly on DOM elements load
+        // ------------------ Interaction Events ------------------
+        function onDocumentMouseMove(event) {
+            mouseX = (event.clientX - windowHalfX) * 0.0003;
+            mouseY = (event.clientY - windowHalfY) * 0.0003;
+        }
+
+        function onTouchMove(event) {
+            if (event.touches.length === 1) {
+                mouseX = (event.touches[0].pageX - windowHalfX) * 0.0006;
+                mouseY = (event.touches[0].pageY - windowHalfY) * 0.0006;
+            }
+        }
+
+        function onWindowResize() {
+            windowHalfX = window.innerWidth / 2;
+            windowHalfY = window.innerHeight / 2;
+
+            camera.aspect = container.clientWidth / container.clientHeight;
+            camera.updateProjectionMatrix();
+
+            renderer.setSize(container.clientWidth, container.clientHeight);
+        }
+
+        // ------------------ Core Animation Loop ------------------
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Interpolated slow rotation toward mouse vector
+            targetRotationY += (mouseX - targetRotationY) * 0.05;
+            targetRotationX += (mouseY - targetRotationX) * 0.05;
+
+            if (archStructureGroup) {
+                // Base passive rotation combined with interactive tracking
+                archStructureGroup.rotation.y = targetRotationY + (Date.now() * 0.0001);
+                archStructureGroup.rotation.x = THREE.MathUtils.clamp(targetRotationX, -0.5, 0.5);
+            }
+
+            renderer.render(scene, camera);
+        }
+
+        // Trigger on DOM ready to avoid any load lags
         window.onload = function() {
             initThreeJS();
-        }
+        };
     </script>
 </body>
 </html>
